@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>MyJetEducation.Service.ServiceBus</PackageId>
+    <Authors>MyJetEducation</Authors>
+    <Company>MyJetEducation</Company>
+    <Product>MyJetEducation</Product>
+    <PackageProjectUrl>https://github.com/MyJetEducation/Service.ServiceBus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MyJetEducation/Service.ServiceBus</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MyJetWallet.Sdk.Service" Version="2.1.6" />
+    <PackageReference Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
+    <PackageReference Include="SimpleTrading.Common" Version="1.0.32" />
+    <PackageReference Include="MyJetEducation.Service.Core.Client" Version="1.0.20" />
+    <PackageReference Include="MyJetWallet.Sdk.ServiceBus" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
