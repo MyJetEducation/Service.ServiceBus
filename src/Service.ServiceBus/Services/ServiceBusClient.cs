@@ -17,7 +17,7 @@ namespace Service.ServiceBus.Services
 			MyServiceBusTcpClient tcpServiceBus = builder.RegisterMyServiceBusTcpClient(getHostPort, loggerFactory);
 
 			builder
-				.RegisterInstance(new MyServiceBusPublisher<TServiceBusModel>(tcpServiceBus, topicName, false))
+				.RegisterInstance(new ServiceBusPublisher<TServiceBusModel>(tcpServiceBus, topicName, false))
 				.As<IPublisher<TServiceBusModel>>()
 				.SingleInstance();
 
