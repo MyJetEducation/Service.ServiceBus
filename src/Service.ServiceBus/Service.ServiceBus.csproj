@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
     <PackageReference Include="MyJetEducation.Service.Core.Client" Version="1.0.20" />
+    <PackageReference Include="MyJetWallet.Sdk.ServiceBus" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
