@@ -11,9 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
+    <PackageReference PrivateAssets="All" Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
     <PackageReference PrivateAssets="All" Include="MyJetEducation.Service.Core.Client" Version="1.0.26" />
-    <PackageReference Include="MyJetWallet.Sdk.ServiceBus" Version="2.1.0" />
+    <PackageReference PrivateAssets="All" Include="MyJetWallet.Sdk.ServiceBus" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
