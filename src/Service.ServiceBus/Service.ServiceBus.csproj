@@ -11,9 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MyJetEducation.Service.Education" Version="1.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
     <PackageReference PrivateAssets="All" Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
-    <PackageReference PrivateAssets="All" Include="MyJetEducation.Service.Core.Client" Version="1.0.28" />
-    <PackageReference PrivateAssets="All" Include="MyJetWallet.Sdk.ServiceBus" Version="2.1.0" />
+    <PackageReference PrivateAssets="All" Include="MyJetEducation.Service.Core.Client" Version="1.0.29" />
+    <PackageReference PrivateAssets="All" Include="MyJetWallet.Sdk.ServiceBus" Version="2.2.1" />
   </ItemGroup>
 
 </Project>
