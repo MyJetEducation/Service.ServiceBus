@@ -12,7 +12,7 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-change-email";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string Email { get; set; }
 
 		[DataMember(Order = 2)]
 		public string Hash { get; set; }
