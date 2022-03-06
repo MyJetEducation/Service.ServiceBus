@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MyJetEducation.Service.Education" Version="1.0.1">
+    <PackageReference Include="MyJetEducation.Service.Education" Version="1.0.2">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
     <PackageReference PrivateAssets="All" Include="SimpleTrading.ServiceStatusReporterConnector" Version="1.0.9" />
