@@ -16,7 +16,7 @@ namespace Service.ServiceBus.Tests
 			(typeof (RecoveryInfoServiceBusModel), new RecoveryInfoServiceBusModel {Email = "some@email.com", Hash = "qwe"}),
 			(typeof (RegistrationInfoServiceBusModel), new RegistrationInfoServiceBusModel {Email = "some@email.com", Hash = "qwe"}),
 			(typeof (RetryUsedServiceBusModel), new RetryUsedServiceBusModel {UserId = new Guid("7568c9bb-438a-4d80-ab84-d8d6763d7f7f"), Count = 1,}),
-			(typeof (SetProgressInfoServiceBusModel), new SetProgressInfoServiceBusModel {UserId = new Guid("7568c9bb-438a-4d80-ab84-d8d6763d7f7f"), Duration = TimeSpan.Zero, IsRetry = true, SetUserProgress = true, Task = 1, Tutorial = EducationTutorial.Economics, Unit = 1}),
+			(typeof (SetProgressInfoServiceBusModel), new SetProgressInfoServiceBusModel {UserId = new Guid("7568c9bb-438a-4d80-ab84-d8d6763d7f7f"), Duration = TimeSpan.Zero, IsRetry = true, SetUserProgress = true, Task = 1, Tutorial = EducationTutorial.Economics, Unit = 1, Progress = 80}),
 			(typeof (UserAccountFilledServiceBusModel), new UserAccountFilledServiceBusModel {UserId = new Guid("7568c9bb-438a-4d80-ab84-d8d6763d7f7f")}),
 			(typeof (UserProgressUpdatedServiceBusModel), new UserProgressUpdatedServiceBusModel {UserId = new Guid("7568c9bb-438a-4d80-ab84-d8d6763d7f7f"), HabitCount = 1}),
 			(typeof (ChangeEmailServiceBusModel), new ChangeEmailServiceBusModel {Email = "some@email.com", Hash = "123"})

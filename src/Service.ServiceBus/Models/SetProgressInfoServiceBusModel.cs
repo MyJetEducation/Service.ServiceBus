@@ -29,5 +29,8 @@ namespace Service.ServiceBus.Models
 
 		[DataMember(Order = 7)]
 		public bool IsRetry { get; set; }
+
+		[DataMember(Order = 8)]
+		public int Progress { get; set; }
 	}
 }
