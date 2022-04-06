@@ -12,7 +12,7 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-retry-used";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 
 		[DataMember(Order = 2)]
 		public int Count { get; set; }

@@ -12,6 +12,6 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-useraccount-filled";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 	}
 }
