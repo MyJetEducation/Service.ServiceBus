@@ -23,9 +23,29 @@ namespace Service.ServiceBus.Tests
 			(typeof (ChangeEmailServiceBusModel), new ChangeEmailServiceBusModel {Email = "some@email.com", Hash = "123"}),
 			(typeof (NewPaymentServiceBusModel), new NewPaymentServiceBusModel {CardId = new Guid("44584892-a988-43a7-98cd-57654894df8e"), TransactionId = new Guid("3ba27c2f-c503-4960-a3e2-2ca2f5b1cefc"), UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
 			(typeof (UserTimeChangedServiceBusModel), new UserTimeChangedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", TotalSpan = TimeSpan.FromDays(1), TodaySpan = TimeSpan.FromMinutes(1)}),
-			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", ClearTutorial = EducationTutorial.Economics, ClearTask = 1, ClearUnit = 1, ClearAchievements = true, ClearStatuses = true, ClearHabits = true, ClearSkills = true, ClearKnowledge = true, ClearUserTime = true, ClearRetry = true}),
 			(typeof (ClearEducationUiProgressServiceBusModel), new ClearEducationUiProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
-			(typeof (NewMascotProductServiceBusModel), new NewMascotProductServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin})
+			(typeof (NewMascotProductServiceBusModel), new NewMascotProductServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin}),
+			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel
+			{
+				UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293",
+				ClearProgressInfo = new ClearEducationProgressInfo
+				{
+					Tutorial = EducationTutorial.Economics,
+					Task = 1,
+					Unit = 1
+				},
+				ClearFlags = new ClearEducationProgressFlags
+				{
+					Achievements = true,
+					Statuses = true,
+					Habits = true,
+					Skills = true,
+					Knowledge = true,
+					UserTime = true,
+					Retry = true,
+					Progress = true
+				}
+			})
 		};
 
 		public static void AreEqualByJson(object expected, object actual)

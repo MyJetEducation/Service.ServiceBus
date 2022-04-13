@@ -15,33 +15,50 @@ namespace Service.ServiceBus.Models
 		public string UserId { get; set; }
 
 		[DataMember(Order = 2)]
-		public EducationTutorial? ClearTutorial { get; set; }
+		public ClearEducationProgressInfo ClearProgressInfo { get; set; }
 
 		[DataMember(Order = 3)]
-		public int? ClearUnit { get; set; }
+		public ClearEducationProgressFlags ClearFlags { get; set; }
+	}
+
+	[DataContract]
+	public class ClearEducationProgressInfo
+	{
+		[DataMember(Order = 1)]
+		public EducationTutorial? Tutorial { get; set; }
+
+		[DataMember(Order = 2)]
+		public int? Unit { get; set; }
+
+		[DataMember(Order = 3)]
+		public int? Task { get; set; }
+	}
+
+	[DataContract]
+	public class ClearEducationProgressFlags
+	{
+		[DataMember(Order = 1)]
+		public bool Progress { get; set; }
+
+		[DataMember(Order = 2)]
+		public bool Achievements { get; set; }
+
+		[DataMember(Order = 3)]
+		public bool Statuses { get; set; }
 
 		[DataMember(Order = 4)]
-		public int? ClearTask { get; set; }
+		public bool Habits { get; set; }
 
 		[DataMember(Order = 5)]
-		public bool ClearAchievements { get; set; }
+		public bool Skills { get; set; }
 
 		[DataMember(Order = 6)]
-		public bool ClearStatuses { get; set; }
+		public bool Knowledge { get; set; }
 
 		[DataMember(Order = 7)]
-		public bool ClearHabits { get; set; }
+		public bool UserTime { get; set; }
 
 		[DataMember(Order = 8)]
-		public bool ClearSkills { get; set; }
-
-		[DataMember(Order = 9)]
-		public bool ClearKnowledge { get; set; }
-
-		[DataMember(Order = 10)]
-		public bool ClearUserTime { get; set; }
-
-		[DataMember(Order = 11)]
-		public bool ClearRetry { get; set; }
+		public bool Retry { get; set; }
 	}
 }
