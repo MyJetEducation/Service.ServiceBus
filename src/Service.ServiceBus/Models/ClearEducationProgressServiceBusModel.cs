@@ -1,5 +1,4 @@
-﻿using System;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Service.Education.Structure;
 
 namespace Service.ServiceBus.Models
@@ -13,7 +12,7 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-clear-education-progress";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 
 		[DataMember(Order = 2)]
 		public EducationTutorial? Tutorial { get; set; }
@@ -23,8 +22,5 @@ namespace Service.ServiceBus.Models
 
 		[DataMember(Order = 4)]
 		public int? Task { get; set; }
-
-		[DataMember(Order = 5)]
-		public bool? ClearUiProgress { get; set; }
 	}
 } 
