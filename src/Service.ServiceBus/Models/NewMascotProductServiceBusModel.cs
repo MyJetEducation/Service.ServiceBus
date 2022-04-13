@@ -13,7 +13,7 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-new-mascot-product";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 
 		[DataMember(Order = 2)]
 		public MarketProductType Product { get; set; }

@@ -12,7 +12,7 @@ namespace Service.ServiceBus.Models
 		public const string TopicName = "myjeteducation-profiling-finished";
 
 		[DataMember(Order = 1)]
-		public Guid? UserId { get; set; }
+		public string UserId { get; set; }
 
 		/// <summary>
 		///     Длинное
