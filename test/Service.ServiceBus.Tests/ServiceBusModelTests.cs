@@ -25,27 +25,7 @@ namespace Service.ServiceBus.Tests
 			(typeof (UserTimeChangedServiceBusModel), new UserTimeChangedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", TotalSpan = TimeSpan.FromDays(1), TodaySpan = TimeSpan.FromMinutes(1)}),
 			(typeof (ClearEducationUiProgressServiceBusModel), new ClearEducationUiProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
 			(typeof (NewMascotProductServiceBusModel), new NewMascotProductServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin}),
-			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel
-			{
-				UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293",
-				ClearProgressInfo = new ClearEducationProgressInfo
-				{
-					Tutorial = EducationTutorial.Economics,
-					Task = 1,
-					Unit = 1
-				},
-				ClearFlags = new ClearEducationProgressFlags
-				{
-					Achievements = true,
-					Statuses = true,
-					Habits = true,
-					Skills = true,
-					Knowledge = true,
-					UserTime = true,
-					Retry = true,
-					Progress = true
-				}
-			})
+			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel { UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", ClearAchievements = true, ClearStatuses = true, ClearHabits = true, ClearSkills = true, ClearKnowledge = true, ClearUserTime = true, ClearRetry = true, ClearProgress = true })
 		};
 
 		public static void AreEqualByJson(object expected, object actual)
