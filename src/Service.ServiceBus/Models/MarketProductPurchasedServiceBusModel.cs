@@ -18,6 +18,9 @@ namespace Service.ServiceBus.Models
 		public MarketProductType Product { get; set; }
 
 		[DataMember(Order = 3)]
-		public decimal? Amount { get; set; }
+		public decimal? ProductPrice { get; set; }
+
+		[DataMember(Order = 4)]
+		public decimal? AccountValue { get; set; }
 	}
 }

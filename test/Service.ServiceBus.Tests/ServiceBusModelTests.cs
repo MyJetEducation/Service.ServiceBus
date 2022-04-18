@@ -24,7 +24,7 @@ namespace Service.ServiceBus.Tests
 			(typeof (NewPaymentServiceBusModel), new NewPaymentServiceBusModel {CardId = new Guid("44584892-a988-43a7-98cd-57654894df8e"), TransactionId = new Guid("3ba27c2f-c503-4960-a3e2-2ca2f5b1cefc"), UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
 			(typeof (UserTimeChangedServiceBusModel), new UserTimeChangedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", TotalSpan = TimeSpan.FromDays(1), TodaySpan = TimeSpan.FromMinutes(1)}),
 			(typeof (ClearEducationUiProgressServiceBusModel), new ClearEducationUiProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
-			(typeof (MarketProductPurchasedServiceBusModel), new MarketProductPurchasedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin, Amount = 10}),
+			(typeof (MarketProductPurchasedServiceBusModel), new MarketProductPurchasedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin, AccountValue = 10, ProductPrice = 10}),
 			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", ClearAchievements = true, ClearStatuses = true, ClearHabits = true, ClearSkills = true, ClearKnowledge = true, ClearUserTime = true, ClearRetry = true, ClearProgress = true})
 		};
 
