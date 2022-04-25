@@ -32,5 +32,8 @@ namespace Service.ServiceBus.Models
 
 		[DataMember(Order = 8)]
 		public int Progress { get; set; }
+
+		[DataMember(Order = 9)]
+		public int TutorialProgress { get; set; }
 	}
 }
