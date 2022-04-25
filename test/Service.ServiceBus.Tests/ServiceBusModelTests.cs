@@ -3,6 +3,7 @@ using System.Reflection;
 using MyJetWallet.Sdk.ServiceBus;
 using Newtonsoft.Json;
 using NUnit.Framework;
+using Service.Core.Client.Constants;
 using Service.Education.Structure;
 using Service.MarketProduct.Domain.Models;
 using Service.ServiceBus.Models;
@@ -25,7 +26,8 @@ namespace Service.ServiceBus.Tests
 			(typeof (UserTimeChangedServiceBusModel), new UserTimeChangedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", TotalSpan = TimeSpan.FromDays(1), TodaySpan = TimeSpan.FromMinutes(1)}),
 			(typeof (ClearEducationUiProgressServiceBusModel), new ClearEducationUiProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293"}),
 			(typeof (MarketProductPurchasedServiceBusModel), new MarketProductPurchasedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Product = MarketProductType.MascotSkin, AccountValue = 10, ProductPrice = 10}),
-			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", ClearAchievements = true, ClearStatuses = true, ClearHabits = true, ClearSkills = true, ClearKnowledge = true, ClearUserTime = true, ClearRetry = true, ClearProgress = true})
+			(typeof (ClearEducationProgressServiceBusModel), new ClearEducationProgressServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", ClearAchievements = true, ClearStatuses = true, ClearHabits = true, ClearSkills = true, ClearKnowledge = true, ClearUserTime = true, ClearRetry = true, ClearProgress = true}),
+			(typeof (UserRewardedServiceBusModel), new UserRewardedServiceBusModel {UserId = "08c6f0ac-2a1b-4970-b0a2-17d5c945a293", Achievements = new[] {UserAchievement.ALongWay}, Statuses = new[] {new UserStatusGrpcModel {Status = UserStatus.Analyst, Level = 2}}})
 		};
 
 		public static void AreEqualByJson(object expected, object actual)
